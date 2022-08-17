@@ -9,7 +9,7 @@ static void cleanup(void) {
 }
 
 
-int send_file(char* file_content, size_t file_content_size) {
+int send_data(char* file_content, size_t file_content_size) {
   atexit(cleanup);
 
   printf("Waiting for connection..\n");
