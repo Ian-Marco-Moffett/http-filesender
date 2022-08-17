@@ -9,6 +9,6 @@ CFLAGS = -Werror=implicit \
 				 -fsanitize=address
 
 
-bin/qrsend: $(CFILES)
+bin/fsend: $(CFILES)
 	@ mkdir -p bin/
 	gcc $(CFLAGS) $^ -o $@
