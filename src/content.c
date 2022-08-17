@@ -24,8 +24,9 @@ int send_data(char* file_content, size_t file_content_size) {
   printf("Connected!\n");
 
   server_send(file_content, file_content_size);
-  sleep(2);
 
+  printf("When ready, press CTRL-C to close the connection!\n");
+  pause();
   printf("Connection closed!\n");
   server_close_client();
 
